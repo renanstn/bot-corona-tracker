@@ -8,6 +8,8 @@ Link para o bot: https://t.me/CoronaReportsBot
 
 Basta dar ao bot o comando `/register` para começar a receber avisos.
 
+<img src="https://github.com/Doc-McCoy/bot-corona-tracker/blob/master/screenshots/01.jpg" width="360" height="640"/>
+
 ## Desenvolvimento com Docker
 
 - Subir ambiente
