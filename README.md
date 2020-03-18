@@ -8,4 +8,12 @@ Este app utiliza como fonte de dados [esta API](https://thevirustracker.com/api)
 - Clone o projeto
 - Instale as dependências
     - `pipenv install`
-- 
+- Inicialize um shell
+    - `pipenv shell`
+- Inicialize as models (necessário somente uma vez)
+    - `cd src`
+    - `python int_db.py`
+- Ligar o bot para receber usuarios
+    - `python listen.py`
+- Script chamado via cron para coletar e enviar as informações para os usuários registrados
+    - `python check_news.py`
