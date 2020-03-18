@@ -4,6 +4,8 @@ A idéia deste app é fazer um bot do telegram que de hora em hora entregue info
 
 Este app utiliza como fonte de dados [esta API](https://thevirustracker.com/api)
 
+Link para o bot: t.me/CoronaReportsBot
+
 ## Desenvolvimento com Docker
 
 - Subir ambiente
