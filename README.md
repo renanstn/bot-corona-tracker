@@ -6,7 +6,7 @@ Este app utiliza como fonte de dados [esta API](https://thevirustracker.com/api)
 
 Link para o bot: https://t.me/CoronaReportsBot
 
-Basta dar ao bot o comando `/register` para se registrar.
+Basta dar ao bot o comando `/register` para começar a receber avisos.
 
 ## Desenvolvimento com Docker
 
