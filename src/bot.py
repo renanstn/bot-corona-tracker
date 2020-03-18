@@ -44,7 +44,7 @@ class Bot:
             "manterei informado sobre os números dos casos "
             "de corona vírus no Brasil e no mundo."
         )
-        self.bot.send_message(user_id, response)
+        self.bot.send_message(chat_id, response)
 
     def start_pooling(self):
         self.updater.start_polling()

@@ -22,4 +22,6 @@ Este app utiliza como fonte de dados [esta API](https://thevirustracker.com/api)
 - Subir ambiente
     - `docker-compose up -d`
 - Inicializar banco de dados (necessário somente pela primeira vez)
-    - `docker-compose run bot python init_db.py`
+    - `docker-compose run --rm bot python init_db.py`
+- Executar manualmente a verificação de novos números
+    - `docker-compose run --rm bot python check_news.py`
