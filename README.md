@@ -4,7 +4,7 @@ A idéia deste app é fazer um bot do telegram que de hora em hora entregue info
 
 Este app utiliza como fonte de dados [esta API](https://thevirustracker.com/api)
 
-## Desenvolvimento
+## Desenvolvimento sem Docker
 - Clone o projeto
 - Instale as dependências
     - `pipenv install`
@@ -17,3 +17,9 @@ Este app utiliza como fonte de dados [esta API](https://thevirustracker.com/api)
     - `python listen.py`
 - Script chamado via cron para coletar e enviar as informações para os usuários registrados
     - `python check_news.py`
+
+## Desenvolvimento com Docker
+- Subir ambiente
+    - `docker-compose up -d`
+- Inicializar banco de dados (necessário somente pela primeira vez)
+    - `docker-compose run bot python init_db.py`

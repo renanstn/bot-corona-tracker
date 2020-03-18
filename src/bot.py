@@ -28,12 +28,23 @@ class Bot:
     def start(self, update, context):
         context.bot.send_message(
             chat_id=update.effective_chat.id,
-            text="Bem vindo"
+            text=(
+                "Bem vindo ao CoronaBot\n"
+                "Para receber atualizações de hora em hora, "
+                "registre-se com o comando abaixo:\n\n"
+                "/register"
+            )
         )
 
     def register_user(self, update, context):
         chat_id = update.message.chat_id
         add_user(chat_id)
+        response = (
+            "Usuário registrado. A partir de agora te "
+            "manterei informado sobre os números dos casos "
+            "de corona vírus no Brasil e no mundo."
+        )
+        self.bot.send_message(user_id, response)
 
     def start_pooling(self):
         self.updater.start_polling()
