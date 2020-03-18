@@ -32,3 +32,19 @@ Basta dar ao bot o comando `/register` para se registrar.
     - `python listen.py`
 - Script chamado via cron para coletar e enviar as informações para os usuários registrados
     - `python check_news.py`
+
+## config.ini
+
+- Em ambos os casos, é necessário criar um arquivo `config.ini` dentro da pasta `src` com a seguinte estrutura:
+
+```ini
+[db]
+host = <host>
+port = <port>
+database = <database>
+user = <user>
+pass = <password>
+
+[telegram]
+token = <token_do_telegram>
+```
