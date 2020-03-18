@@ -50,3 +50,11 @@ pass = <password>
 [telegram]
 token = <token_do_telegram>
 ```
+
+## TODO
+
+- [ ] Implementar um logger nesse trem
+- [ ] Adicionar funcionalidade do usuário cancelar a "assinatura"
+- [ ] Escrever testes unitários
+- [ ] Aproveitar e tratar melhor as informações, fazer comparativos, resumos, etc.
+- [ ] Hospedar em um lugar descente (atualmente está no meu Raspberry Pi)
