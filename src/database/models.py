@@ -1,10 +1,18 @@
 from peewee import *
-from db_conn import db
+from .db_conn import db
 
 
 class BaseModel(Model):
     class Meta:
         database = db
+
+
+class BotUser(BaseModel):
+    chat_id = CharField(unique=True)
+
+    @classmethod
+    def add(cls, chat_id):
+        cls.create(chat_id=chat_id)
 
 
 class WorldData(BaseModel):
