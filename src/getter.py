@@ -9,8 +9,8 @@ class Api:
 
     def get_global_stats(self):
         data = requests.get(self.URL_GLOBAL_STATS).json()
-        print(data)
+        return data
 
     def get_country_stats(self):
         data = requests.get(self.URL_COUNTRY_BR).json()
-        print(data['countrydata'])
+        return data['countrydata']
