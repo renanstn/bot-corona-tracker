@@ -5,7 +5,7 @@ from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
-DATABASE_URL = urlparse(os.getenv('DATABASE_URL'))
+# DATABASE_URL = urlparse(os.getenv('DATABASE_URL'))
 
 DATABASE = os.getenv('DATABASE'),
 USER = os.getenv('USER'),
