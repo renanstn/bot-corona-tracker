@@ -10,13 +10,12 @@ from functions.init_db import init_db
 OPTIONS = ['init', 'listen', 'check_news']
 
 # Inicializar o banco
-
 db.init(
-    os.getenv('DATABASE'),
-    user = os.getenv('USER'),
-    password = os.getenv('PASS'),
-    host = os.getenv('HOST'),
-    port = os.getenv('PORT')
+    settings.DATABASE,
+    user = settings.USER,
+    password = settings.PASSWORD,
+    host = settings.HOST,
+    port = settings.PORT
 )
 
 if len(argv) > 1 and argv[1] in OPTIONS:

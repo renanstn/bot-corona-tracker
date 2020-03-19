@@ -2,7 +2,8 @@ import datetime
 from peewee import *
 
 
-db = MySQLDatabase(None)
+# db = MySQLDatabase(None)
+db = PostgresqlDatabase(None)
 
 
 class BaseModel(Model):
