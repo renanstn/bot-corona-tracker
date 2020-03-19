@@ -7,7 +7,7 @@ load_dotenv(find_dotenv())
 
 url = urlparse(os.getenv('DATABASE_URL'))
 
-DATABASE = url.path
+DATABASE = url.path[1:]
 USER = url.username
 PASSWORD = url.password
 HOST = url.hostname
