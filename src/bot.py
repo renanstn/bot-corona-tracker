@@ -1,20 +1,13 @@
+import os
 import telegram
 from telegram.ext import Updater, CommandHandler
-from configparser import ConfigParser
 from database.functions import *
+import settings
 
 
 class Bot:
-    '''
-    Classe que fará a comunicação com o bot do telegram.
-    Necessita de um arquivo config.ini com o seguinte parâmetro:
-        [telegram]
-        token = <token>
-    '''
     def __init__(self):
-        parser = ConfigParser()
-        parser.read('./config.ini')
-        token = parser['telegram']['token']
+        token = settings.TOKEN
         self.bot = telegram.Bot(token=token)
         self.updater = Updater(token=token, use_context=True)
         self.dispatcher = self.updater.dispatcher

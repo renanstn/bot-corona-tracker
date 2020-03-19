@@ -3,7 +3,7 @@ from api import Api
 from database.functions import *
 
 
-def main():
+def check():
     # Coletar as informações e salvar
     api = Api()
     global_stats = api.get_global_stats()
@@ -14,7 +14,3 @@ def main():
     # Transmitir as informações
     bot = Bot()
     bot.send_report(global_stats, country_stats)
-
-
-if __name__ == "__main__":
-    main()

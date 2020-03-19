@@ -10,6 +10,7 @@ requests = "*"
 python-telegram-bot = "*"
 peewee = "*"
 psycopg2-binary = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"

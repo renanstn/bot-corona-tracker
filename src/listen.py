@@ -1,9 +1,6 @@
 from bot import Bot
 
 
-def main():
+def listen():
     bot = Bot()
     bot.start_pooling()
-
-if __name__ == "__main__":
-    main()

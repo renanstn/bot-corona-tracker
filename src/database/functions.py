@@ -1,5 +1,5 @@
 from .models import *
-from .db_conn import db
+
 
 def get_global_news():
     pass
