@@ -5,18 +5,20 @@ from database.models import db
 from check_news import check
 from listen import listen
 from functions.init_db import init_db
+from playhouse.db_url import connect
 
 
 OPTIONS = ['init', 'listen', 'check_news']
 
 # Inicializar o banco
-db.init(
-    os.getenv('DATABASE'),
-    user = os.getenv('USER'),
-    password = os.getenv('PASS'),
-    host = os.getenv('HOST'),
-    port = os.getenv('PORT')
-)
+db = connect(settings.DATABASE_URL)
+# db.init(
+#     os.getenv('DATABASE'),
+#     user = os.getenv('USER'),
+#     password = os.getenv('PASS'),
+#     host = os.getenv('HOST'),
+#     port = os.getenv('PORT')
+# )
 
 if len(argv) > 1 and argv[1] in OPTIONS:
     arg = argv[1]

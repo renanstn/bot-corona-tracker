@@ -1,1 +1,1 @@
-web: python src/run.py listen
+worker: python src/run.py listen
